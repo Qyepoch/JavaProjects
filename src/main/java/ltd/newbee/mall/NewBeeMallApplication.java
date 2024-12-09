@@ -13,12 +13,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author 13
- * @qq交流群 796794009
- * @email 2449207463@qq.com
- * @link https://github.com/newbee-ltd
+ * 启动类
  */
-@MapperScan("ltd.newbee.mall.dao")
+@MapperScan("ltd.newbee.mall.dao")// 在启动类中增加对Mapper包的扫描@MapperScan,Spring Boot在启动的时候会自动加载包路径下的Mapper接口；当然，也可以直接在每个Mapper接口上面添加@Mapper注解。但是如果Mapper接口数量较多，在每个Mapper接口上添加注解是比较烦琐的，建议扫描注解。
 @SpringBootApplication
 public class NewBeeMallApplication {
     public static void main(String[] args) {
