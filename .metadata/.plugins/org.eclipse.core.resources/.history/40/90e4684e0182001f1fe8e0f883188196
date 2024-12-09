@@ -1,0 +1,12 @@
+package com.jan.demo;
+
+import java.net.ServerSocket;
+
+public class TcpServer {
+	public static void main(String[] args) {
+		// 1. 创建socket
+		ServerSocket serverSocket = new ServerSocket();
+		
+	}
+
+}

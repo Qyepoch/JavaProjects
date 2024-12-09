@@ -1,0 +1,10 @@
+package com.jan.demo;
+
+public class Test {
+	 public static void main(String[] args) {
+		 System.out.println("开启多线程！");
+		 ClimbRunnable ru = new ClimbRunnable(2000, 2000);
+		 
+		 ru.run();
+	}
+}

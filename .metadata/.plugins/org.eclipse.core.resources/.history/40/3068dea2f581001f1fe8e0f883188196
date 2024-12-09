@@ -1,0 +1,8 @@
+package com.jan.test;
+
+public class Test {
+	 public static void main(String[] args) {
+		 System.out.println("开启多线程！");
+		 ClimbRunnable ru = new ClimbRunnable();
+	}
+}
