@@ -1,0 +1,15 @@
+package com.jan.demo;
+
+import java.io.IOException;
+import java.net.Socket;
+
+public class TcpClient {
+	public static void main(String[] args) {
+		// 1. 创建一个socket
+		Socket serverSocket = new Socket(); // args:(ip,arg)
+		
+		
+		
+	}
+
+}

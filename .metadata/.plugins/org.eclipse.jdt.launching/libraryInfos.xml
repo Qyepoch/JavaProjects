@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="D:\App Station\Coding\Java-JDK" version="1.8.0_271">
+        <bootpath>
+            <entry path="D:\App Station\Coding\Java-JDK\jre\lib\resources.jar"/>
+            <entry path="D:\App Station\Coding\Java-JDK\jre\lib\rt.jar"/>
+            <entry path="D:\App Station\Coding\Java-JDK\jre\lib\sunrsasign.jar"/>
+            <entry path="D:\App Station\Coding\Java-JDK\jre\lib\jsse.jar"/>
+            <entry path="D:\App Station\Coding\Java-JDK\jre\lib\jce.jar"/>
+            <entry path="D:\App Station\Coding\Java-JDK\jre\lib\charsets.jar"/>
+            <entry path="D:\App Station\Coding\Java-JDK\jre\lib\jfr.jar"/>
+            <entry path="D:\App Station\Coding\Java-JDK\jre\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="D:\App Station\Coding\Java-JDK\jre\lib\ext"/>
+            <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="D:\App Station\Coding\Java-JDK\jre\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="D:\App Station\Coding\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551" version="21.0.4">
+        <bootpath>
+            <entry path="null"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="null"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="null"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="D:\App Station\Coding\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre" version="21.0.4"/>
+</libraryInfos>

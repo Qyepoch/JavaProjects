@@ -1,0 +1,20 @@
+package functions;
+
+import java.util.Scanner;
+
+public class maxint {
+	public static int findMax(String[] array) {
+		int max = 0;
+		Scanner scan = new Scanner(System.in);
+		String[] strArr = scan.nextLine().split(" "); // split()返回的是一个新的字符串类型数组，并不会改变原来数组
+		for(String str:strArr) {
+			int number = Integer.parseInt(str.trim()); // 将字符串转换为整数
+			if (number > max) {
+				max = number;
+			}
+		}
+		return max;
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.jan.demo;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+
+public class TcpClient {
+	public static void main(String[] args) {
+		// 1. 创建一个socket
+		try {
+			ServerSocket serverSocket = new ServerSocket(6666);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
