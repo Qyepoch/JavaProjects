@@ -6193,3 +6193,286 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.mybatis.s
 2024-12-09 21:32:54,779 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2024-12-09 21:32:56,869 [Worker-5: reload maven project] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.20.0-GA during dependency collection step for project (use -X to see details)
 2024-12-09 21:32:57,896 [Worker-5: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.31 has been relocated to com.mysql:mysql-connector-j:jar:8.0.31: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2024-12-09 22:25:30,535 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:25:30,535 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:25:30,556 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-12-09 22:25:30,647 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1115 resources
+2024-12-09 22:25:31,599 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:25:31,599 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:25:31,599 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\JeeWorkSpace\newbee-mall\src\test\resources
+2024-12-09 22:25:35,640 [Worker-33: Building] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating NewbeeMallApplicationTests from maven configuration
+2024-12-09 22:25:36,544 [Worker-33: Building] ERROR o.e.m.jdt.internal.UnitTestSupport - The resource tree is locked for modifications.
+org.eclipse.core.internal.resources.ResourceException: The resource tree is locked for modifications.
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:122)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2401)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2446)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:226)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:187)
+	at org.eclipse.m2e.jdt.internal.UnitTestSupport$ConfigurationManager.defineConfigurationValues(UnitTestSupport.java:293)
+	at org.eclipse.m2e.jdt.internal.UnitTestSupport$ConfigurationManager.setupLaunchConfiguration(UnitTestSupport.java:247)
+	at org.eclipse.m2e.jdt.internal.UnitTestSupport.setupLaunchConfigurationFromMavenConfiguration(UnitTestSupport.java:174)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:213)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:203)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1933)
+	at org.eclipse.debug.internal.core.LaunchManager.lambda$0(LaunchManager.java:580)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2081)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:459)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1587)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1607)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.refreshResources(MavenBuilderImpl.java:325)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:196)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: The resource tree is locked for modifications.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 57 common frames omitted
+2024-12-09 22:25:36,632 [Worker-33: Building] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration Test (2) references non-existing project Test.
+org.eclipse.core.runtime.CoreException: Launch configuration Test (2) references non-existing project Test.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1870)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1747)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:46)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:213)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:203)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1933)
+	at org.eclipse.debug.internal.core.LaunchManager.lambda$0(LaunchManager.java:580)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2081)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:459)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1587)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1607)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.refreshResources(MavenBuilderImpl.java:325)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:196)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-12-09 22:39:51,434 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-12-09 22:41:48,218 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409 [643])
+2024-12-09 22:41:48,222 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409
+2024-12-09 22:41:48,222 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\aopalliance-1.0.jar
+2024-12-09 22:41:48,222 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\guice-5.1.0.jar
+2024-12-09 22:41:48,222 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\httpclient-4.5.14.jar
+2024-12-09 22:41:48,223 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\httpcore-4.4.16.jar
+2024-12-09 22:41:48,223 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\jansi-2.4.1.jar
+2024-12-09 22:41:48,223 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\jcl-over-slf4j-1.7.36.jar
+2024-12-09 22:41:48,223 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-artifact-3.9.9.jar
+2024-12-09 22:41:48,223 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-builder-support-3.9.9.jar
+2024-12-09 22:41:48,223 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-compat-3.9.9.jar
+2024-12-09 22:41:48,223 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-core-3.9.9.jar
+2024-12-09 22:41:48,223 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-embedder-3.9.9.jar
+2024-12-09 22:41:48,223 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-model-3.9.9.jar
+2024-12-09 22:41:48,223 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-model-builder-3.9.9.jar
+2024-12-09 22:41:48,224 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-plugin-api-3.9.9.jar
+2024-12-09 22:41:48,224 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-repository-metadata-3.9.9.jar
+2024-12-09 22:41:48,224 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-api-1.9.22.jar
+2024-12-09 22:41:48,224 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-connector-basic-1.9.22.jar
+2024-12-09 22:41:48,224 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-impl-1.9.22.jar
+2024-12-09 22:41:48,224 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-named-locks-1.9.22.jar
+2024-12-09 22:41:48,224 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-provider-3.9.9.jar
+2024-12-09 22:41:48,224 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-spi-1.9.22.jar
+2024-12-09 22:41:48,224 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-transport-file-1.9.22.jar
+2024-12-09 22:41:48,224 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-transport-http-1.9.22.jar
+2024-12-09 22:41:48,224 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-transport-wagon-1.9.22.jar
+2024-12-09 22:41:48,225 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-util-1.9.22.jar
+2024-12-09 22:41:48,225 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-settings-3.9.9.jar
+2024-12-09 22:41:48,225 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-settings-builder-3.9.9.jar
+2024-12-09 22:41:48,225 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-shared-utils-3.4.2.jar
+2024-12-09 22:41:48,225 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\org.eclipse.sisu.inject-0.9.0.M3.jar
+2024-12-09 22:41:48,225 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\org.eclipse.sisu.plexus-0.9.0.M3.jar
+2024-12-09 22:41:48,225 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-build-api-0.0.7.jar
+2024-12-09 22:41:48,225 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-build-api-1.2.0.jar
+2024-12-09 22:41:48,225 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-cipher-2.0.jar
+2024-12-09 22:41:48,225 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-classworlds-2.8.0.jar
+2024-12-09 22:41:48,225 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-component-annotations-2.1.0.jar
+2024-12-09 22:41:48,226 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-interpolation-1.27.jar
+2024-12-09 22:41:48,226 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-sec-dispatcher-2.0.jar
+2024-12-09 22:41:48,226 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-utils-3.5.1.jar
+2024-12-09 22:41:48,226 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-xml-3.0.1.jar
+2024-12-09 22:41:48,226 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-file-3.5.3.jar
+2024-12-09 22:41:48,226 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-http-3.5.3.jar
+2024-12-09 22:41:48,226 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-http-shared-3.5.3.jar
+2024-12-09 22:41:48,226 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-provider-api-3.5.3.jar
+2024-12-09 22:41:48,228 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.3.0.jre [16])
+2024-12-09 22:41:48,229 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\com.google.guava_33.3.0.jre.jar
+2024-12-09 22:41:48,229 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.16 [1008])
+2024-12-09 22:41:48,230 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\slf4j.api_2.0.16.jar
+2024-12-09 22:41:48,230 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.inject.jakarta.inject-api_1.0.5 [34])
+2024-12-09 22:41:48,231 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\jakarta.inject.jakarta.inject-api_1.0.5.jar
+2024-12-09 22:41:48,231 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.annotation-api_1.3.5 [29])
+2024-12-09 22:41:48,232 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\jakarta.annotation-api_1.3.5.jar
+2024-12-09 22:41:48,232 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.9.0 [78])
+2024-12-09 22:41:48,233 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.apache.commons.cli_1.9.0.jar
+2024-12-09 22:41:48,233 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [81])
+2024-12-09 22:41:48,234 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2024-12-09 22:41:48,234 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [17])
+2024-12-09 22:41:48,235 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: D:\App Station\Coding\eclipse\plugins\com.google.guava.failureaccess_1.0.2.jar
+2024-12-09 22:41:48,238 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "D:\Projects\JeeWorkSpace\newbee-mall":
+2024-12-09 22:41:48,242 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean
+2024-12-09 22:41:49,380 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.20.0-GA during dependency collection step for project (use -X to see details)
+2024-12-09 22:41:50,072 [Worker-17: Launching Executing clean in D__Projects_JeeWorkSpace_newbee-mall] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.31 has been relocated to com.mysql:mysql-connector-j:jar:8.0.31: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2024-12-09 22:41:59,924 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:41:59,924 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:41:59,937 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-12-09 22:42:00,002 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1115 resources
+2024-12-09 22:42:05,540 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:42:05,541 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:42:05,541 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\JeeWorkSpace\newbee-mall\src\test\resources
+2024-12-09 22:42:15,148 [Worker-1: Cleaning all projects] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.21.0-GA during dependency collection step for project (use -X to see details)
+2024-12-09 22:42:16,303 [Worker-1: Cleaning all projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/sa-base: net.1024lab:sa-base:3.0.0 with classifier  to /sa-base/target/classes
+2024-12-09 22:42:20,194 [Worker-1: Cleaning all projects] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.21.0-GA during dependency collection step for project (use -X to see details)
+2024-12-09 22:42:24,687 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:42:24,687 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:42:24,694 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-12-09 22:42:24,753 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1115 resources
+2024-12-09 22:42:30,622 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:42:30,623 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:42:30,623 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\JeeWorkSpace\newbee-mall\src\test\resources
+2024-12-09 22:42:35,826 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 42 resources from src\main\resources to target\classes
+2024-12-09 22:42:35,976 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources\dev to target\classes
+2024-12-09 22:42:36,011 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources\dev to target\classes
+2024-12-09 22:42:36,019 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Projects\JeeWorkSpace\smart-admin-master\smart-admin-api\sa-base\src\test\resources
+2024-12-09 22:42:38,867 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 15 resources from src\main\resources to target\classes
+2024-12-09 22:42:38,928 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources\dev to target\classes
+2024-12-09 22:42:38,932 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources\dev to target\classes
+2024-12-09 22:42:38,941 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Projects\JeeWorkSpace\smart-admin-master\smart-admin-api\sa-admin\src\test\resources
+2024-12-09 22:42:57,401 [Worker-10: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-12-09 22:43:00,147 [Worker-10: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ltd.newbee.mall:newbee-mall:1.0.0-SNAPSHOT @ D:\Projects\JeeWorkSpace\newbee-mall\pom.xml.
+2024-12-09 22:43:00,316 [Worker-10: Updating Maven Project] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.20.0-GA during dependency collection step for project (use -X to see details)
+2024-12-09 22:43:00,800 [Worker-10: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.31 has been relocated to com.mysql:mysql-connector-j:jar:8.0.31: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2024-12-09 22:43:03,925 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /newbee-mall/src/main/java
+2024-12-09 22:43:03,929 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /newbee-mall/src/main/resources
+2024-12-09 22:43:03,931 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /newbee-mall/src/main/resources
+2024-12-09 22:43:03,953 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /newbee-mall/src/test/java
+2024-12-09 22:43:03,955 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /newbee-mall/src/test/resources
+2024-12-09 22:43:04,618 [Worker-10: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Reset launch configuration name: NewbeeMallApplicationTests
+2024-12-09 22:43:04,618 [Worker-10: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating NewbeeMallApplicationTests from maven configuration
+2024-12-09 22:43:05,459 [Worker-10: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Reset launch configuration name: NewbeeMallApplicationTests
+2024-12-09 22:43:05,460 [Worker-10: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating NewbeeMallApplicationTests from maven configuration
+2024-12-09 22:43:07,667 [Worker-10: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 1.00 sec, refresh facades takes 2.00 sec, update config takes 3.00 sec 
+2024-12-09 22:43:08,391 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:43:08,391 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:43:08,396 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-12-09 22:43:08,423 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1115 resources
+2024-12-09 22:43:13,623 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:43:13,623 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:43:13,623 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\JeeWorkSpace\newbee-mall\src\test\resources
+2024-12-09 22:43:46,726 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:43:46,726 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:43:46,772 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-12-09 22:43:46,972 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-12-09 22:43:46,979 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:43:46,980 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:43:46,980 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\JeeWorkSpace\newbee-mall\src\test\resources
+2024-12-09 22:44:50,631 [Worker-14: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ltd.newbee.mall:newbee-mall:1.0.0-SNAPSHOT @ D:\Projects\JeeWorkSpace\newbee-mall\pom.xml.
+2024-12-09 22:44:50,792 [Worker-14: Building] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.20.0-GA during dependency collection step for project (use -X to see details)
+2024-12-09 22:44:51,311 [Worker-14: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.31 has been relocated to com.mysql:mysql-connector-j:jar:8.0.31: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2024-12-09 22:44:52,733 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:44:52,733 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:44:52,771 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-12-09 22:44:52,958 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-12-09 22:44:52,963 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:44:52,963 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:44:52,963 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\JeeWorkSpace\newbee-mall\src\test\resources
+2024-12-09 22:44:57,101 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:44:57,101 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:44:57,104 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-12-09 22:44:57,125 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1115 resources
+2024-12-09 22:45:02,616 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:45:02,616 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:45:02,616 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\JeeWorkSpace\newbee-mall\src\test\resources
+2024-12-09 22:45:36,804 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-12-09 22:45:39,195 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ltd.newbee.mall:newbee-mall:1.0.0-SNAPSHOT @ D:\Projects\JeeWorkSpace\newbee-mall\pom.xml.
+2024-12-09 22:45:39,375 [Worker-14: Updating Maven Project] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.20.0-GA during dependency collection step for project (use -X to see details)
+2024-12-09 22:45:39,900 [Worker-14: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.31 has been relocated to com.mysql:mysql-connector-j:jar:8.0.31: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2024-12-09 22:45:42,994 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /newbee-mall/src/main/java
+2024-12-09 22:45:42,996 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /newbee-mall/src/main/resources
+2024-12-09 22:45:42,997 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /newbee-mall/src/main/resources
+2024-12-09 22:45:42,998 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /newbee-mall/src/test/java
+2024-12-09 22:45:42,999 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /newbee-mall/src/test/resources
+2024-12-09 22:45:43,778 [Worker-14: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Reset launch configuration name: NewbeeMallApplicationTests
+2024-12-09 22:45:43,779 [Worker-14: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating NewbeeMallApplicationTests from maven configuration
+2024-12-09 22:45:45,299 [Worker-14: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Reset launch configuration name: NewbeeMallApplicationTests
+2024-12-09 22:45:45,299 [Worker-14: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating NewbeeMallApplicationTests from maven configuration
+2024-12-09 22:45:48,509 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 1.00 sec, refresh facades takes 2.00 sec, update config takes 4.00 sec 
+2024-12-09 22:45:49,886 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:45:49,886 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:45:49,893 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-12-09 22:45:49,923 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1115 resources
+2024-12-09 22:45:56,219 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-12-09 22:45:56,219 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-12-09 22:45:56,219 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projects\JeeWorkSpace\newbee-mall\src\test\resources
+2024-12-11 21:16:14,998 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-12-11 21:21:19,161 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-12-11 21:21:55,512 [Worker-10: reload maven project] WARN  o.a.m.r.i.DefaultArtifactDescriptorReader - 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.20.0-GA during dependency collection step for project (use -X to see details)
+2024-12-11 21:21:56,504 [Worker-10: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.31 has been relocated to com.mysql:mysql-connector-j:jar:8.0.31: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
