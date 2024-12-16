@@ -1,0 +1,21 @@
+package ltd.newbee.mall.api.param;
+
+/*Serializable接口用于标记一个类可以被序列化。
+  序列化是将对象转换为字节流以便在网络上传输或存储到文件中的过程。
+  当一个类实现了Serializable接口后，它的对象可以被序列化和反序列化，从而实现对象的持久化存储和网络传输等功能。
+  */
+import java.io.Serializable;
+import javax.validation.constraints.NotEmpty;
+import lombok.Data;
+
+/*
+ * 用户登录param
+ */
+@Data
+public class MallUserLoginParam implements Serializable{
+	@NotEmpty(message = "登录名不能为空")
+	private String loginName;
+	
+	@NotEmpty(message = "密码不能为空")
+	private String passwordMd5;
+}

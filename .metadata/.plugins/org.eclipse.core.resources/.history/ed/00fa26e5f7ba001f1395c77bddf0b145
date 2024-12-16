@@ -1,0 +1,5 @@
+1. lombok插件是一个注解，可以不用写类似getter和setter方法；
+2. entity实体类
+3. dao：interface接口
+4. mapper.xml
+5. controller

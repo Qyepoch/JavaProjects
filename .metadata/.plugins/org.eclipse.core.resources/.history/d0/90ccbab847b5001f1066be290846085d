@@ -1,5 +1,0 @@
-package ltd.newbee.mall.controller;
-
-public @interface AutoWired {
-
-}

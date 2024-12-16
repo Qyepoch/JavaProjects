@@ -1,0 +1,13 @@
+package ltd.newbee.mall.entity;
+import java.util.Date;
+
+// 通过注解自动生成一些常用方法
+import lombok.Data;
+
+@Data
+public class MallUserToken {
+	private long userId;
+	private String token;
+	private Date updateTime;
+	private Date expireTime;
+}

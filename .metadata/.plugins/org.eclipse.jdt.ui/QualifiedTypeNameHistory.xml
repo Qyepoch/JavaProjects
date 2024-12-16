@@ -5,4 +5,5 @@
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="org.springframework.util.CollectionUtils"/>
     <fullyQualifiedTypeName name="org.springframework.util.StringUtils"/>
+    <fullyQualifiedTypeName name="ltd.newbee.mall.entity.TestUser"/>
 </qualifiedTypeNameHistroy>
